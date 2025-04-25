@@ -317,14 +317,65 @@
             padding: 100px 20px 30px;
         }
         
-        /* ... (rest of your responsive styles) ... */
     }
     
     @media (max-width: 480px) {
-        .banner {
-            height: 150px;
-            border-radius: 0 0 30px 30px;
+        body, html {
+            font-size: 14px;
         }
-        
-        /* ... (rest of your mobile styles) ... */
+    
+        .container {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: stretch;
+        }
+    
+        .banner {
+            height: 120px;
+            border-radius: 0 0 25px 25px;
+        }
+    
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            top: -50px;
+        }
+    
+        .profile-card {
+            width: 95%;
+            padding: 80px 15px 20px;
+            top: 10%;
+            border-radius: 20px;
+        }
+    
+        .name {
+            font-size: 24px;
+        }
+    
+        .title {
+            font-size: 18px;
+            margin-top: 30px;
+        }
+    
+        .location {
+            font-size: 14px;
+        }
+    
+        .stats {
+            flex-direction: column;
+            gap: 20px;
+        }
+    
+        .stat-number {
+            font-size: 20px;
+        }
+    
+        .stat-label {
+            font-size: 14px;
+        }
+    
+        .bubble {
+            display: none;
+        }
     }
+    
